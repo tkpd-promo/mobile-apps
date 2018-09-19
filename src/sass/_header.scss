@@ -1,0 +1,246 @@
+.top-navigation {
+  &.green {
+    background: #42b549;
+    a {
+      background: url('../assets/img-tokopedia-logo.png') no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    .pivot-button {
+      background: url('https://ecs7.tokopedia.net/assets/images/ic_menu.png');
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  padding: 0 24px 0 30px;
+  height: 60px;
+  border-bottom: solid 1px #e0e0e0;
+  transition: 0.6s top cubic-bezier(0.86, 0, 0.07, 1);
+  &.removed {
+    top: -60px;
+  }
+  @media only screen and (max-width: 992px) {
+    // background: transparent;
+    position: static;
+  }
+  @include breakpoint(xs) {
+    // text-align: center;
+    padding: 0 16px;
+  }
+  &-logo {
+    float: left;
+    margin-top: 18px;
+    @include breakpoint(xs) {
+      float: none;
+      display: inline-block;
+    }
+    a {
+      display: inline-block;
+      height: 25px;
+      width: 215px;
+      background: url('https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/branding%403x.png') no-repeat;
+      background-size: contain;
+      background-position: center;
+      @media only screen and (max-width: 480px) {
+        // background: url('../assets/img-tokopedia-logo.png') no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+  &-menu {
+    float: right;
+    &-list {
+      list-style-type: none;
+    }
+    &__link {
+      border-radius: 3px;
+      color: #FFF;
+      padding: 6px 12px;
+      margin-top: 4px;
+      display: block;
+      letter-spacing: 1px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: opacity .25s ease;
+      &:hover {
+        color: #FFF;
+        text-decoration: none;
+        opacity: .8;
+      }
+    }
+  }
+  &-pivot {
+    margin-top: 16px;
+    float: right;
+  }
+}
+
+.overlay {
+  background: rgba(0,0,0, .7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+  z-index: 1002;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-out;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.pivot {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  &-button {
+    position: relative;
+    z-index: 999;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    outline: 0;
+    top: -2px;
+    left: 1px;
+    background-color: transparent;
+    background-image: url("https://ecs7.tokopedia.net/img/blog/seller/2018/03/pivot@2x.png");
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    background-size: 32px 32px;
+    cursor: pointer;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+    @include breakpoint(xs) {
+      display: none;
+    }
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &-container {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease-out .12s;
+    -o-transition: all .2s ease-out .12s;
+    transition: all .2s ease-out .12s;
+    -webkit-box-shadow: 0 2px 16px rgba(0,0,0,.1);
+    box-shadow: 0 2px 16px rgba(0,0,0,.1);
+    position: absolute;
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 250px;
+    top: 36px;
+    right: -20px;
+    &--active {
+      opacity: 1;
+      visibility: visible;
+      top: 43px;
+    }
+    &::before {
+      top: -6px;
+      right: 24px;
+      display: block;
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-radius: 4px;
+      background-color: #fff;
+    }
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: -7px;
+      right: 24px;
+      width: 16px;
+      height: 16px;
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-radius: 4px;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      z-index: -1;
+    }
+  }
+  &-item {
+    width: 50%;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    -webkit-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    &__link {
+      text-decoration: none;
+    }
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+  }
+  &-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &__wrapper {
+      box-sizing: border-box;
+      margin: 0 auto;
+      background: #FFF;
+      transition: background .25s ease;
+    }
+    &__text {
+      font-family: 'Open-sans', sans-serif;
+      display: block;
+      margin: 0;
+      color: rgba(0,0,0, .68);
+      font-size: 11px;
+      line-height: 1.5;
+      &:hover {
+        color: #42b549;
+      }
+    }
+    &-pulsa {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-pulsa@2x.png);
+    }
+    &-tiket {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-tiket@2x.png);
+    }
+    &-toped {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-toped@2x.png);
+    }
+    &-official {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-official-store@2x.png);
+    }
+    &-help {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-bantuan@2x.png);
+    }
+    &-donasi {
+      background-image: url(https://ecs7.tokopedia.net/img/icon_tokopedia-donasi@2x.png);
+    }
+  }
+}

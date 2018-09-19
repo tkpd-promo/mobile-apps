@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Tokopedia Mobile Apps</title>
+      <style>
+        body.fixed {
+          overflow: hidden;
+        }
+        
+         .heading{
+          padding-left: 15px; padding-bottom: 20px; border-bottom: 1px solid rgb(187, 187, 187)
+         }
+         .loader {
+          height: 100%;
+          width: 100%;
+          position: fixed;
+          top: 0;
+          z-index: 9999999;
+          background: #fff;
+          transition: top 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+         }
+         img.loader-img {
+           position: fixed;
+           top: 50%;
+           left: 50%;
+           transform: translate(calc(-50% + 20px), -50%);
+           width: 55%;
+           max-width: 280px;
+           z-index: 99999999;
+           transition: top 1.5s cubic-bezier(0.86, 0, 0.07, 1), transform 1.5s cubic-bezier(0.86, 0, 0.07, 1);
+         }
+         img.loader-img.remove {
+           top: -170px;
+           transform: translate(-50%, 0);
+         }
+         .loader.green {
+           background: #42B549;
+           z-index: 9999998;
+           transition: top 1.5s cubic-bezier(0.86, 0, 0.07, 1) .1s;
+         }
+         .loader.green-2 {
+           background: #f8d745;
+           z-index: 9999997;
+           transition: top 1.5s cubic-bezier(0.86, 0, 0.07, 1) .2s;
+         }
+         .loader.remove {
+           top: -105%;
+         }
+         .preload-content {
+           position: absolute;
+           left: -999999px;
+           height: -999999px;
+         }
+      </style>
+   </head>
+   <body class="fixed">
+        <div class="loader green-2"></div>
+        <div class="loader green"></div>
+        <div class="loader"></div>
+        <img class="loader-img" src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/Logo_2.gif" alt="">
+
+        <div class="preload-content">
+          <video src="https://ecs7.tokopedia.net/assets/images/SearchCompressed%20%282%29.mp4" preload></video>
+          <video src="https://ecs7.tokopedia.net/assets/images/BayarCompressed.mp4" preload=""></video>
+          <video src="https://ecs7.tokopedia.net/assets/images/PesanCompressed.mp4" preload></video>
+          <video src="https://ecs7.tokopedia.net/assets/images/AjukanCompressed.mp4" preload></video>
+          <video src="https://ecs7.tokopedia.net/assets/images/Jual_v01Compressed.mp4" preload></video>
+          <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/group-16.png" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%282%29.svg" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-27%402x.png" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%283%29.svg" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-15%20%281%29.svg" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%284%29.svg" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-27.svg" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%285%29.svg" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-15%20%282%29.svg" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%286%29.svg" alt="">
+        </div>
+
+        ${require('./html-part/_header.html')}
+        
+        <main class="main-wrapper">
+
+        <div class="banner">
+          <img src="https://ecs7.tokopedia.net/assets/images/gomi%20copy%202.svg" class="spinner spin-cw" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/gomi%20copy%202.svg" class="spinner spin-cw" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/gomi%20copy%202.svg" class="spinner spin-cw" alt="">
+          <div class="container">
+            <div class="left">
+              <h1 class="hidden">Download Aplikasi Tokopedia dan Rasakan Manfaatnya</h1>
+              <div class="seperator hidden delayed"></div>
+              <p class="hidden delayed-2">Nikmati Berbagai Kemudahan Jual, Beli, Bayar, Pinjam dan Ajukan Online dalam Genggaman.</p>
+              <button class="download-green">Download Sekarang<div class="text"><img src="https://ecs7.tokopedia.net/assets/images/Download-01.png" />Download Sekarang</div></button>
+              <!-- <button class="download-btn hidden delayed-3"><img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/Download-01.png" />Unduh Aplikasi</button> -->
+              <!-- <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/08/google-play-badge.png" alt="" class="download hidden delayed-3">
+              <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/08/download-on-the-app-store-badge-id-rgb-blk-100317.png" alt="" class="download hidden delayed-4"> -->
+            </div>
+            <div class="right">
+              <video src="https://ecs7.tokopedia.net/assets/images/Banner_v01Compressed.mp4" class="full-width" autoplay loop muted></video>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <ul class="white-box">
+            <li class="item">
+              <img src="https://ecs7.tokopedia.net/assets/images/group-8.svg" alt="">
+              <div class="text">
+                <h3>Jual Beli dengan Mudah</h3>
+                <p>Aktivitas jual beli langsung di genggaman Anda di mana saja dan kapan saja.</p>
+              </div>
+            </li>
+            <li class="item">
+              <img src="https://ecs7.tokopedia.net/assets/images/group-7%20%283%29.svg" alt="">
+              <div class="text">
+                <h3>Push Notifications</h3>
+                <p>Terima notifikasi langsung untuk Anda. Lebih cepat dan selalu update.</p>
+              </div>
+            </li>
+            <li class="item">
+              <img src="https://ecs7.tokopedia.net/assets/images/group-10.svg" alt="">
+              <div class="text">
+                <h3>Swift and Smooth</h3>
+                <p>Transisi aplikasi yang halus dan kemudahan penggunaan untuk Anda.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container text-center">
+          <ul class="tabs">
+            <li class="tab active"
+            data-video="https://ecs7.tokopedia.net/assets/images/SearchCompressed%20%282%29.mp4" 
+            data-title="<b>Beli</b> Semua Kebutuhan"
+            data-description="Temukan apa pun yang kamu butuhkan dalam satu aplikasi. Koleksi fashion terpopuler, elektronik & gadget terkini, peralatan rumah tangga terbaik, semua ada! Tersedia berbagai metode pembayaran dan pengiriman untuk menjamin pengalaman belanja yang mudah, aman, dan nyaman." 
+            data-circle-1="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/group-16.png"
+            data-circle-2="https://ecs7.tokopedia.net/assets/images/group-16%20%282%29.svg" >Beli</li>
+            <li class="tab" 
+            data-video="https://ecs7.tokopedia.net/assets/images/BayarCompressed.mp4" 
+            data-title="<b>Bayar</b> Aneka Tagihan"
+            data-description="Gak perlu lagi antre atau menunggu. Berbagai tagihan rutin seperti PLN, Telkom, BPJS, Kartu Kredit, bahkan PBB bisa kamu lunasi 24 jam tanpa ke luar rumah. Proses cepat, banyak promo menarik!" 
+            data-circle-1="https://ecs7.tokopedia.net/assets/images/group-27%402x.png"
+            data-circle-2="https://ecs7.tokopedia.net/assets/images/group-16%20%283%29.svg" >Bayar</li>
+            <li class="tab"
+            data-video="https://ecs7.tokopedia.net/assets/images/PesanCompressed.mp4" 
+            data-title="<b>Pesan</b> Tiket Perjalanan & Hiburan"
+            data-description="Pesan tiket ke destinasi impian makin praktis dan ekonomis, lho. Tinggal pilih tanggal dan harga terbaik, kamu bisa langsung pergi! Bingung mau ke mana di akhir pekan? Cek pilihan hiburan di Tokopedia dan beli tiketnya dengan harga lebih murah." 
+            data-circle-1="https://ecs7.tokopedia.net/assets/images/group-15%20%281%29.svg" 
+            data-circle-2="https://ecs7.tokopedia.net/assets/images/group-16%20%284%29.svg">Pesan</li>
+            <li class="tab"
+            data-video="https://ecs7.tokopedia.net/assets/images/AjukanCompressed.mp4" 
+            data-title="<b>Ajukan</b> Aplikasi Produk Keuangan"
+            data-description="Memenuhi kebutuhan dana tak pernah semudah ini. Ajukan pinjaman modal, kartu kredit, atau asuransi hanya dengan sekali klik. Bekerja sama dengan banyak mitra terpercaya, proses tidak bertele-tele, produk pun bisa dipantau kapan pun dan di mana pun." 
+            data-circle-1="https://ecs7.tokopedia.net/assets/images/group-27.svg"
+            data-circle-2="https://ecs7.tokopedia.net/assets/images/group-16%20%285%29.svg">Ajukan</li>
+            <li class="tab"
+            data-video="https://ecs7.tokopedia.net/assets/images/Jual_v01Compressed.mp4"
+            data-title="<b>Jual</b> Produk Kebanggaan"
+            data-description="Hanya berbekal nomor rekening & alamat email, kamu bisa langsung jual produkmu ke 78 juta pengunjung Tokopedia. Nikmati mudahnya kelola bisnis online kapan dan di mana saja. Akses ke berbagai bank, layanan logistik, hingga verifikasi otomatis, semua bisa kamu manfaatkan secara GRATIS! "
+            data-circle-1="https://ecs7.tokopedia.net/assets/images/group-15%20%282%29.svg"
+            data-circle-2="https://ecs7.tokopedia.net/assets/images/group-16%20%286%29.svg" >Jual</li>
+            <li class="tab-thumb"></li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+          <img src="https://ecs7.tokopedia.net/assets/images/gomi%20copy%202.svg" class="spinner spin-cw" alt="">
+          <img src="https://ecs7.tokopedia.net/assets/images/gomi%20copy%202.svg" class="spinner spin-cw" alt="">
+          <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/gomi-copy-4%402x1.png" class="spinner--right spin-cw" alt="">
+          <div class="container">
+            <div class="video-container">
+              <div class="background fade-out">
+                <img src="https://ecs7.tokopedia.net/assets/images/path-4-copy-2.svg" alt="">
+              </div>
+              <div class="circle-1-wrapper circle-1">
+                  <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/group-16.png" class="wiggle-v" alt="">
+              </div>
+              <div class="circle-2-wrapper circle-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%282%29.svg" class="wiggle-v wiggle-v--delayed" alt="">
+              </div>
+              
+              <div class="box-1-wrapper box-1">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-6%20%281%29.svg" class="wiggle-v wiggle-v--delayed-3" alt="">
+              </div>
+              <div class="box-2-wrapper box-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-9.svg" class="wiggle-v wiggle-v--delayed-2" alt="">
+              </div>
+              <div class="video-wrapper">
+                  <video src="https://ecs7.tokopedia.net/assets/images/SearchCompressed%20%282%29.mp4" class="video" autoplay loop muted></video>
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/mockup-horizontal.png" alt="" class="video-frame">
+              </div>
+            </div>
+            <div class="text-container">
+              <h2 class="hidden"><b>Beli</b> Semua Kebutuhan</h2>
+              <div class="seperator hidden delayed"></div>
+              <p class="hidden delayed">Temukan apa pun yang kamu butuhkan dalam satu aplikasi. Koleksi fashion terpopuler, elektronik & gadget terkini, peralatan rumah tangga terbaik, semua ada! Tersedia berbagai metode pembayaran dan pengiriman untuk menjamin pengalaman belanja yang mudah, aman, dan nyaman.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tc-share">
+          <p class="tc-share__p" style="margin-bottom: 15px;">Beritahu Orang Tentang Ini!
+            <span>Bagikan</span>
+          </p>
+          <div class="addthis_inline_share_toolbox"></div>
+        </div>
+
+        <div class="tab-content-m">
+          <!-- Beli -->
+          <div class="container left">
+            <h2 class="hidden"><b>Beli</b> semua kebutuhanmu di Tokopedia</h2>
+            <div class="seperator hidden delayed"></div>
+            <p class="hidden delayed-2">Tokopedia menyediakan beragam pembayaran produk digital seperti,  beli pulsa, beli paket data,bayar PLN, hingga bayar BPJS. Jadi, tunggu apalagi? Segera lakukan pembayaran digital hanya lewat Tokopedia!</p>
+            <div class="video-container">
+              <div class="background fade-out">
+                <img src="https://ecs7.tokopedia.net/assets/images/path-4-copy-2.svg" alt="">
+              </div>
+              <div class="circle-1-wrapper circle-1">
+                  <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/group-16.png" class="wiggle-v" alt="">
+              </div>
+              <div class="circle-2-wrapper circle-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%282%29.svg" class="wiggle-v wiggle-v--delayed" alt="">
+              </div>
+              
+              <div class="box-1-wrapper box-1">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-6.svg" class="wiggle-v wiggle-v--delayed-3" alt="">
+              </div>
+              <div class="box-2-wrapper box-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-9.svg" class="wiggle-v wiggle-v--delayed-2" alt="">
+              </div>
+              <div class="video-wrapper">
+                  <video src="https://ecs7.tokopedia.net/assets/images/SearchCompressed%20%282%29.mp4" class="video" autoplay loop muted></video>
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/mockup-horizontal.png" alt="" class="video-frame">
+              </div>
+            </div>
+            <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/gomi-copy-4%402x1.png" alt="" class="spinner">
+          </div>
+          <!-- Bayar -->
+          <div class="container right">
+            <h2 class="hidden"><b>Bayar</b> semua tagihanmu lewat Tokopedia</h2>
+            <div class="seperator hidden delayed"></div>
+            <p class="hidden delayed-2">Bayar di Tokopedia! Internet Banking Lengkap. Bisa Pakai Kartu Kredit. Proses Cepat, Tanpa Antri. 24 Jam Setiap Hari. Banyak Cashback & Promo. Bisa Bayar di Minimarket. Terbesar & Terpercaya. 100% Aman & Mudah</p>
+            <div class="video-container">
+              <div class="background fade-out">
+                <img src="https://ecs7.tokopedia.net/assets/images/path-4-copy-2.svg" alt="">
+              </div>
+              <div class="circle-1-wrapper circle-1">
+                  <img src="https://ecs7.tokopedia.net/assets/images/group-27%402x.png" class="wiggle-v" alt="">
+              </div>
+              <div class="circle-2-wrapper circle-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%283%29.svg" class="wiggle-v wiggle-v--delayed" alt="">
+              </div>
+              
+              <div class="box-1-wrapper box-1">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-6.svg" class="wiggle-v wiggle-v--delayed-3" alt="">
+              </div>
+              <div class="box-2-wrapper box-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-9.svg" class="wiggle-v wiggle-v--delayed-2" alt="">
+              </div>
+              <div class="video-wrapper">
+                  <video src="https://ecs7.tokopedia.net/assets/images/BayarCompressed.mp4" class="video" autoplay loop muted></video>
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/mockup-horizontal.png" alt="" class="video-frame">
+              </div>
+            </div>
+            <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/gomi-copy-4%402x1.png" alt="" class="spinner">
+          </div>
+          <!-- Pesan -->
+          <div class="container left">
+            <h2 class="hidden"><b>Pesan</b> Tiket lewat Tokopedia</h2>
+            <div class="seperator hidden delayed"></div>
+            <p class="hidden delayed-2">Temukan Promo terbaru pesan tiket pesawat, tiket kereta api, hingga tiket hiburan di Tokopedia. Cek jadwal online, reservasi & booking  tiket lebih praktis & terpercaya di Tokopedia.</p>
+            <div class="video-container">
+              <div class="background fade-out">
+                <img src="https://ecs7.tokopedia.net/assets/images/path-4-copy-2.svg" alt="">
+              </div>
+              <div class="circle-1-wrapper circle-1">
+                  <img src="https://ecs7.tokopedia.net/assets/images/group-15%20%281%29.svg" class="wiggle-v" alt="">
+              </div>
+              <div class="circle-2-wrapper circle-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%284%29.svg" class="wiggle-v wiggle-v--delayed" alt="">
+              </div>
+              
+              <div class="box-1-wrapper box-1">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-6.svg" class="wiggle-v wiggle-v--delayed-3" alt="">
+              </div>
+              <div class="box-2-wrapper box-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-9.svg" class="wiggle-v wiggle-v--delayed-2" alt="">
+              </div>
+              <div class="video-wrapper">
+                  <video src="https://ecs7.tokopedia.net/assets/images/PesanCompressed.mp4" class="video" autoplay loop muted></video>
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/mockup-horizontal.png" alt="" class="video-frame">
+              </div>
+            </div>
+            <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/gomi-copy-4%402x1.png" alt="" class="spinner">
+          </div>
+          <!-- Ajukan -->
+          <div class="container right">
+            <h2 class="hidden"><b>Ajukan</b> ini itu di Tokopedia</h2>
+            <div class="seperator hidden delayed"></div>
+            <p class="hidden delayed-2">Program pinjaman modal usaha untuk pengembangan bisnis online Anda. Tersedia berbaga keuntungan mengajukan pinjaman modal lewat Tokopedia</p>
+            <div class="video-container">
+              <div class="background fade-out">
+                <img src="https://ecs7.tokopedia.net/assets/images/path-4-copy-2.svg" alt="">
+              </div>
+              <div class="circle-1-wrapper circle-1">
+                  <img src="https://ecs7.tokopedia.net/assets/images/group-27.svg" class="wiggle-v" alt="">
+              </div>
+              <div class="circle-2-wrapper circle-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%285%29.svg" class="wiggle-v wiggle-v--delayed" alt="">
+              </div>
+              
+              <div class="box-1-wrapper box-1">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-6.svg" class="wiggle-v wiggle-v--delayed-3" alt="">
+              </div>
+              <div class="box-2-wrapper box-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-9.svg" class="wiggle-v wiggle-v--delayed-2" alt="">
+              </div>
+              <div class="video-wrapper">
+                  <video src="https://ecs7.tokopedia.net/assets/images/AjukanCompressed.mp4" class="video" autoplay loop muted></video>
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/mockup-horizontal.png" alt="" class="video-frame">
+              </div>
+            </div>
+            <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/gomi-copy-4%402x1.png" alt="" class="spinner">
+          </div>
+          <!-- Jual -->
+          <div class="container left">
+            <h2 class="hidden"><b>Jual</b> produk jualanmu di Tokopedia</h2>
+            <div class="seperator hidden delayed"></div>
+            <p class="hidden delayed-2">Dengan membuka toko online di Tokopedia, kamu akan otomatis terhubung dengan banyak pilihan bank dan agen logistik terbesar di Indonesia. Metode pembayaran instan seperti Mandiri ClickPay, Mandiri e-Cash, BCA KlikPay, KlikBCA, Kartu Kredit, dan Indomaret bisa kamu gunakan secara GRATIS!</p>
+            <div class="video-container">
+              <div class="background fade-out">
+                <img src="https://ecs7.tokopedia.net/assets/images/path-4-copy-2.svg" alt="">
+              </div>
+              <div class="circle-1-wrapper circle-1">
+                  <img src="https://ecs7.tokopedia.net/assets/images/group-15%20%282%29.svg" class="wiggle-v" alt="">
+              </div>
+              <div class="circle-2-wrapper circle-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-16%20%286%29.svg" class="wiggle-v wiggle-v--delayed" alt="">
+              </div>
+              
+              <div class="box-1-wrapper box-1">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-6.svg" class="wiggle-v wiggle-v--delayed-3" alt="">
+              </div>
+              <div class="box-2-wrapper box-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-9.svg" class="wiggle-v wiggle-v--delayed-2" alt="">
+              </div>
+              <div class="video-wrapper">
+                  <video src="https://ecs7.tokopedia.net/assets/images/Jual_v01Compressed.mp4" class="video" autoplay loop muted></video>
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/mockup-horizontal.png" alt="" class="video-frame">
+              </div>
+            </div>
+            <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/gomi-copy-4%402x1.png" alt="" class="spinner">
+          </div>
+        </div>
+
+        <div class="footer-banner">
+          <div class="spinner-bottom-right">
+            <img src="https://ecs7.tokopedia.net/assets/images/gomi%20copy%202.svg" alt="" class="spin-cw full-width">
+          </div>
+          <div class="white-bar"></div>
+          <div class="container">
+            <div class="left">
+              <div class="img-container">
+                <div class="toped"></div>
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-9%20%281%29.svg" alt="" class="box-1 wiggle-v">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-6%20%281%29.svg" alt="" class="box-2 wiggle-v wiggle-v--delayed-2">
+                <img src="https://ecs7.tokopedia.net/assets/images/group-2-copy-9%20%281%29.svg" alt="" class="box-3 wiggle-v wiggle-v--delayed">
+                <img src="https://tokopedia-upload.s3.amazonaws.com/assets/images/group-2-copy-4.svg" alt="" class="box-4 wiggle-v wiggle-v--delayed-3">
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/Bunder2.png" class="spin-ccw background" alt="">
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/HP-TO-QR-2.png" class="phone desktop" alt="">
+                <img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/hpnoshadow-04.png" alt="" class="phone mobile">
+                <div class="download-btn-m">
+                  <a href="https://play.google.com/store/apps/details?id=com.tokopedia.tkpd&hl=en" target="_blank"><img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/google-play-badge-1%402x1.png" alt="" ></a>
+                  <a href="https://itunes.apple.com/id/app/tokopedia-jual-beli-online/id1001394201?mt=8" target="_blank"><img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/download-on-the-app-store-badge-id-rgb-blk-100317%402x1.png" alt="" ></a>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <h2 class="hidden color-invert">Unduh Aplikasi Tokopedia dan rasakan manfaatnya</h2>
+              <div class="seperator hidden delayed invert"></div>
+              <a href="https://play.google.com/store/apps/details?id=com.tokopedia.tkpd&hl=en" target="_blank"><img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/google-play-badge-1%402x1.png" alt="" class="download"></a>
+              <a href="https://itunes.apple.com/id/app/tokopedia-jual-beli-online/id1001394201?mt=8" target="_blank"><img src="https://ecs7.tokopedia.net/assets-tokopoints/prod/images/2018/09/download-on-the-app-store-badge-id-rgb-blk-100317%402x1.png" alt="" class="download"></a>
+            </div>
+          </div>
+          <div class="footer-wrapper">
+              ${require('./html-part/_footer.html')}
+          </div>
+        </div>
+
+        <div class="floating-btn-container">
+          <button class="floating-btn"><img src="https://ecs7.tokopedia.net/assets/images/download%20%282%29.svg" />Unduh Apilkasi</button>
+        </div>
+      </main>
+
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b91fe9937b4005e"></script>
+   </body>
+</html>
